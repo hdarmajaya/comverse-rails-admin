@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  point_class: 1
+  language_code: 1
+  short_display: MyString
+  display_value: MyString
+
+two:
+  point_class: 1
+  language_code: 1
+  short_display: MyString
+  display_value: MyString

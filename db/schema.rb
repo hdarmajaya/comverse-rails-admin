@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131112205151) do
+ActiveRecord::Schema.define(:version => 20131112210533) do
 
   create_table "descriptions", :id => false, :force => true do |t|
     t.integer "description_code"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(:version => 20131112205151) do
     t.integer "point_class"
     t.integer "is_default"
     t.integer "is_internal"
+  end
+
+  create_table "point_class_values", :id => false, :force => true do |t|
+    t.integer "point_class"
+    t.integer "language_code"
+    t.string  "short_display"
+    t.string  "display_value"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
