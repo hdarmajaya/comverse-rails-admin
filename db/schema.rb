@@ -11,12 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131112163053) do
+ActiveRecord::Schema.define(:version => 20131112190300) do
 
-  create_table "language_code_ref", :id => false, :force => true do |t|
+  create_table "descriptions", :id => false, :force => true do |t|
+    t.integer "description_code"
     t.integer "language_code"
-    t.integer "is_default"
-    t.integer "is_internal"
+    t.integer "description_group"
+    t.string  "description_text"
+    t.string  "short_description_text"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
