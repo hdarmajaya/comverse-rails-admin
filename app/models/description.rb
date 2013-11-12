@@ -18,8 +18,12 @@ class Description < ActiveRecord::Base
 
   rails_admin do
     exclude_fields :language_code
-    field :language_code, :hidden do
-      default_value 1   # set to English
+
+    # set default value for language_code on edit and new
+    edit do
+      field :language_code, :hidden do
+        default_value 1   # set to English
+      end
     end
   end
 end
