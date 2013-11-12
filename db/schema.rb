@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131112162253) do
+ActiveRecord::Schema.define(:version => 20131112163053) do
+
+  create_table "language_code_ref", :id => false, :force => true do |t|
+    t.integer "language_code"
+    t.integer "is_default"
+    t.integer "is_internal"
+  end
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
