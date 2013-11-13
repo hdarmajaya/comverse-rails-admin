@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131113142517) do
+ActiveRecord::Schema.define(:version => 20131113175555) do
 
   create_table "descriptions", :id => false, :force => true do |t|
     t.integer "description_code"
@@ -58,6 +58,12 @@ ActiveRecord::Schema.define(:version => 20131113142517) do
     t.integer "point_id"
     t.integer "language_code"
     t.string  "display_value"
+  end
+
+  create_table "usage_type_groups", :id => false, :force => true do |t|
+    t.integer "type_group_usg"
+    t.integer "type_id_usg"
+    t.integer "description_code"
   end
 
   create_table "usage_types", :id => false, :force => true do |t|
