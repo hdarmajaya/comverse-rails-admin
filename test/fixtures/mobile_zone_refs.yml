@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mobile_zone: 1
+  zone_parent: 1
+  is_default: 1
+  is_internal: 1
+
+two:
+  mobile_zone: 1
+  zone_parent: 1
+  is_default: 1
+  is_internal: 1
