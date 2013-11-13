@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131113202500) do
+ActiveRecord::Schema.define(:version => 20131113214018) do
 
   create_table "descriptions", :id => false, :force => true do |t|
     t.integer "description_code"
@@ -65,6 +65,20 @@ ActiveRecord::Schema.define(:version => 20131113202500) do
     t.integer "is_default"
     t.integer "description_code"
     t.integer "level_code"
+  end
+
+  create_table "tax_assignments", :id => false, :force => true do |t|
+    t.integer "account_category"
+    t.integer "brand_id"
+    t.integer "country_code"
+    t.integer "state_code"
+    t.integer "county_code"
+    t.integer "city_code"
+    t.integer "franchise_code"
+    t.integer "charge_elt_type"
+    t.integer "charge_elt_id"
+    t.integer "provider_id"
+    t.integer "tax_pkg_inst_id"
   end
 
   create_table "usage_jurisdiction", :id => false, :force => true do |t|

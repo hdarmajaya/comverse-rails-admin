@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  account_category: 1
+  brand_id: 1
+  country_code: 1
+  state_code: 1
+  county_code: 1
+  city_code: 1
+  franchise_code: 1
+  charge_elt_type: 1
+  charge_elt_id: 1
+  provider_id: 1
+  tax_pkg_inst_id: 1
+
+two:
+  account_category: 1
+  brand_id: 1
+  country_code: 1
+  state_code: 1
+  county_code: 1
+  city_code: 1
+  franchise_code: 1
+  charge_elt_type: 1
+  charge_elt_id: 1
+  provider_id: 1
+  tax_pkg_inst_id: 1
