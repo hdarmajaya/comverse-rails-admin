@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131113221454) do
+ActiveRecord::Schema.define(:version => 20131113223431) do
 
   create_table "descriptions", :id => false, :force => true do |t|
     t.integer "description_code"
@@ -108,6 +108,19 @@ ActiveRecord::Schema.define(:version => 20131113221454) do
     t.integer "language_code"
     t.string  "short_display"
     t.string  "display_value"
+  end
+
+  create_table "tax_rates_vat", :id => false, :force => true do |t|
+    t.integer "tax_pkg_inst_id"
+    t.integer "currency_code"
+    t.integer "fixed_amt"
+    t.integer "tax_class"
+    t.integer "rate"
+    t.date    "active_date"
+    t.date    "inactive_date"
+    t.integer "tax_type_code"
+    t.integer "billing_frequency"
+    t.integer "range_terminus"
   end
 
   create_table "usage_jurisdiction", :id => false, :force => true do |t|

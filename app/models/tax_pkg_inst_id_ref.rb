@@ -29,6 +29,7 @@ class TaxPkgInstIdRef < ActiveRecord::Base
   validates :is_inclusive, presence: true, length: { maximum: 3 }
 
   has_one :tax_pkg_inst_id_value, foreign_key: :tax_pkg_inst_id, dependent: :destroy
+  has_one :tax_rates_vat, foreign_key: :tax_pkg_inst_id, dependent: :destroy
 
   rails_admin do
     object_label_method :tax_pkg_inst_id

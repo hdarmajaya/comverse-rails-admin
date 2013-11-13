@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tax_pkg_inst_id: 1
+  currency_code: 1
+  fixed_amt: 1
+  tax_class: 1
+  rate: 1
+  active_date: 2013-11-13
+  inactive_date: 2013-11-13
+  tax_type_code: 1
+  billing_frequency: 1
+  range_terminus: 1
+
+two:
+  tax_pkg_inst_id: 1
+  currency_code: 1
+  fixed_amt: 1
+  tax_class: 1
+  rate: 1
+  active_date: 2013-11-13
+  inactive_date: 2013-11-13
+  tax_type_code: 1
+  billing_frequency: 1
+  range_terminus: 1
