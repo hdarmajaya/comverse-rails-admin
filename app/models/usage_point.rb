@@ -17,17 +17,18 @@ class UsagePoint < ActiveRecord::Base
   validates :is_a_prefix, presence: true , length: { maximum: 3 }
   validates :point_status, presence: true , length: { maximum: 3 }
   validates :point_class, presence: true , length: { maximum: 10}
-  validates :point_tax_code , length: { maximum: 15 }
-  validates :point_city , length: { maximum: 10 }
+  validates :point_tax_code, length: { maximum: 15 }
+  validates :point_city, length: { maximum: 105 }
   validates :point_state_abbr, length: { maximum: 6 }
   validates :point_zip, length: { maximum: 16 }
-  validates :country_code , length: { maximum: 6 }
-  validates :point_county , length: { maximum: 84 }
-  validates :point_coordinate_x , length: { maximum: 10 }
-  validates :point_coordinate_y , length: { maximum: 10 }
+  validates :country_code, length: { maximum: 6 }
+  validates :point_county, length: { maximum: 84 }
+  validates :point_coordinate_x, length: { maximum: 10 }
+  validates :point_coordinate_y, length: { maximum: 10 }
   validates :provider_id, length: { maximum: 10 }
-  validates :is_international , length: { maximum: 3 }
-  validates :arch_flag, length: { maximum: 1 }
+  validates :active_dt, presence: true
+  validates :is_international, presence: true, length: { maximum: 3 }
+  validates :arch_flag, presence: true, length: { maximum: 1 }
   validates :access_region, length: { maximum: 15 }
   validates :point_coordinate_x_min, length: { maximum: 10 }
   validates :point_coordinate_y_min, length: { maximum: 10 }
