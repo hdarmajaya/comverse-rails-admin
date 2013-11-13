@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rate_class: 1
+  is_default: 1
+  description_code: 1
+  level_code: 1
+
+two:
+  rate_class: 1
+  is_default: 1
+  description_code: 1
+  level_code: 1
