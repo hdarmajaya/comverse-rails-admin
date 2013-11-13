@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  jurisdiction: 
+  description_code: 
+  jurisdiction_class: 
+
+two:
+  jurisdiction: 
+  description_code: 
+  jurisdiction_class: 
