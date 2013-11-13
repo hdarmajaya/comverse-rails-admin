@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  seqnum: 1
+  jurisdiction: 1
+  element_id: 1
+  type_id_usg: 1
+  rate_class: 1
+  equip_type_code: 1
+  equip_class_code: 1
+  class_of_service_code: 1
+  point_origin: MyString
+  point_target: MyString
+  point_class_origin: 1
+  point_class_target: 1
+  point_region_origin: MyString
+  point_region_target: MyString
+  state_origin: MyString
+  state_origin_exclude: 1
+  state_target: MyString
+  state_target_exclude: 1
+  exclude_group: 1
+  access_region_origin: MyString
+  access_region_target: MyString
+  priority: 1
+  country_code_origin: 1
+  country_code_target: 1
+  active_dt: 2013-11-13
+  inactive_dt: 2013-11-13
+  bill_class: 1
+  zone_class: 1
+
+two:
+  seqnum: 1
+  jurisdiction: 1
+  element_id: 1
+  type_id_usg: 1
+  rate_class: 1
+  equip_type_code: 1
+  equip_class_code: 1
+  class_of_service_code: 1
+  point_origin: MyString
+  point_target: MyString
+  point_class_origin: 1
+  point_class_target: 1
+  point_region_origin: MyString
+  point_region_target: MyString
+  state_origin: MyString
+  state_origin_exclude: 1
+  state_target: MyString
+  state_target_exclude: 1
+  exclude_group: 1
+  access_region_origin: MyString
+  access_region_target: MyString
+  priority: 1
+  country_code_origin: 1
+  country_code_target: 1
+  active_dt: 2013-11-13
+  inactive_dt: 2013-11-13
+  bill_class: 1
+  zone_class: 1
