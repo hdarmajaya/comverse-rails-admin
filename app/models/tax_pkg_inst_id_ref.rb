@@ -7,7 +7,8 @@ class TaxPkgInstIdRef < ActiveRecord::Base
   self.table_name = :tax_pkg_inst_id_ref
   self.primary_key = :tax_pkg_inst_id
 
-  validates :tax_pkg_inst_id, presence: true, length: { maximum: 10 }, uniqueness: true
+  validates :tax_pkg_inst_id, presence: true, length: { maximum: 10 }, 
+            uniqueness: true
   validates :tax_pkg_type, presence: true , length: { maximum: 6 }
   validates :pkg_order, presence: true, length: { maximum: 6 }
   validates :basic_days, presence: true, length: { maximum: 6 }
@@ -27,4 +28,9 @@ class TaxPkgInstIdRef < ActiveRecord::Base
   validates :is_late_fee_exempt, presence: true, length: { maximum: 1 }
   validates :is_inclusive, presence: true, length: { maximum: 3 }
 
+  has_one :tax_pkg_inst_id_value, foreign_key: :tax_pkg_inst_id, dependent: :destroy
+
+  rails_admin do
+    object_label_method :tax_pkg_inst_id
+  end
 end

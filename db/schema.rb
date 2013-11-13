@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131113215653) do
+ActiveRecord::Schema.define(:version => 20131113221454) do
 
   create_table "descriptions", :id => false, :force => true do |t|
     t.integer "description_code"
@@ -101,6 +101,13 @@ ActiveRecord::Schema.define(:version => 20131113215653) do
     t.integer "bin_rounding"
     t.integer "is_late_fee_exempt"
     t.integer "is_inclusive"
+  end
+
+  create_table "tax_pkg_inst_id_values", :id => false, :force => true do |t|
+    t.integer "tax_pkg_inst_id"
+    t.integer "language_code"
+    t.string  "short_display"
+    t.string  "display_value"
   end
 
   create_table "usage_jurisdiction", :id => false, :force => true do |t|
