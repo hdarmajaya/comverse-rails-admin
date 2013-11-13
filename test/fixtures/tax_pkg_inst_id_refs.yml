@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tax_pkg_inst_id: 1
+  tax_pkg_type: 1
+  pkg_order: 1
+  basic_days: 1
+  is_binned: 1
+  is_distributed: 1
+  is_franchise: 1
+  is_gui_pretax: 1
+  exclude_charge: 1
+  rounding_method: 1
+  tax_type: 1
+  is_default: 1
+  is_internal: 1
+  is_graduated: 1
+  tax_zero_charge: 1
+  rounding_factor: 1
+  bin_rounding: 1
+  is_late_fee_exempt: 1
+  is_inclusive: 1
+
+two:
+  tax_pkg_inst_id: 1
+  tax_pkg_type: 1
+  pkg_order: 1
+  basic_days: 1
+  is_binned: 1
+  is_distributed: 1
+  is_franchise: 1
+  is_gui_pretax: 1
+  exclude_charge: 1
+  rounding_method: 1
+  tax_type: 1
+  is_default: 1
+  is_internal: 1
+  is_graduated: 1
+  tax_zero_charge: 1
+  rounding_factor: 1
+  bin_rounding: 1
+  is_late_fee_exempt: 1
+  is_inclusive: 1
