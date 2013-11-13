@@ -1,7 +1,7 @@
 class RateClassDescr < ActiveRecord::Base
   attr_accessible :description_code, :is_default, :level_code, :rate_class
 
-  self.table_name = 'rate_class_descr'
+  self.table_name = :rate_class_descr
   self.primary_key = :rate_class
 
   validates :rate_class, presence: true, length: { maximum: 6 }, uniqueness: true

@@ -1,7 +1,7 @@
 class PointClassRef < ActiveRecord::Base
   attr_accessible :is_default, :is_internal, :point_class
 
-  self.table_name = 'point_class_ref'
+  self.table_name = :point_class_ref
   self.primary_key = :point_class
 
   validates :point_class, presence: true, length: { maximum: 10 },

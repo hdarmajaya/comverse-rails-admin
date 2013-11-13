@@ -1,7 +1,7 @@
 class UsagePointsText < ActiveRecord::Base
   attr_accessible :display_value, :language_code, :point_id
 
-  self.table_name = 'usage_points_text'
+  self.table_name = :usage_points_text
   self.primary_key = :point_id
 
   validates :point_id, presence: true, length: { maximum: 10 },
