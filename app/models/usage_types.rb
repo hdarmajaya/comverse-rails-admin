@@ -69,6 +69,8 @@ class UsageTypes < ActiveRecord::Base
   validates :rating_method, presence:true, length: { maximum: 10 }
   validates :use_zone_class, length: { maximum: 3 }
 
+  has_one :usage_type_group, foreign_key: :type_id_usg, dependent: :destroy
+
   def is_late_fee_exempt_enum
     [ ['No', 0], ['Yes', 1] ]
   end

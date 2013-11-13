@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type_group_usg: 1
+  type_id_usg: 1
+  description_code: 1
+
+two:
+  type_group_usg: 1
+  type_id_usg: 1
+  description_code: 1

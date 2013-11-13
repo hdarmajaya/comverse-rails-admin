@@ -66,6 +66,12 @@ ActiveRecord::Schema.define(:version => 20131113180420) do
     t.string  "display_value"
   end
 
+  create_table "usage_type_groups", :id => false, :force => true do |t|
+    t.integer "type_group_usg"
+    t.integer "type_id_usg"
+    t.integer "description_code"
+  end
+
   create_table "usage_types", :id => false, :force => true do |t|
     t.integer "type_id_usg"
     t.integer "guide_to"
