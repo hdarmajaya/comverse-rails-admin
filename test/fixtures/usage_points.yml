@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  point_id: 1
+  point_type: 1
+  point_category: 1
+  point: MyString
+  point_region: MyString
+  is_a_prefix: 1
+  point_status: 1
+  point_class: 1
+  point_tax_code: MyString
+  point_city: MyString
+  point_state_abbr: MyString
+  point_zip: MyString
+  country_code: 1
+  point_county: MyString
+  point_coordinate_x: 1
+  point_coordinate_y: 1
+  provider_id: 1
+  active_dt: 2013-11-13
+  inactive_dt: 2013-11-13
+  is_international: 1
+  arch_flag: 1
+  access_region: MyString
+  point_coordinate_x_min: 1
+  point_coordinate_y_min: 1
+  point_coordinate_type: 1
+  mobile_zone: 1
+
+two:
+  point_id: 1
+  point_type: 1
+  point_category: 1
+  point: MyString
+  point_region: MyString
+  is_a_prefix: 1
+  point_status: 1
+  point_class: 1
+  point_tax_code: MyString
+  point_city: MyString
+  point_state_abbr: MyString
+  point_zip: MyString
+  country_code: 1
+  point_county: MyString
+  point_coordinate_x: 1
+  point_coordinate_y: 1
+  provider_id: 1
+  active_dt: 2013-11-13
+  inactive_dt: 2013-11-13
+  is_international: 1
+  arch_flag: 1
+  access_region: MyString
+  point_coordinate_x_min: 1
+  point_coordinate_y_min: 1
+  point_coordinate_type: 1
+  mobile_zone: 1
