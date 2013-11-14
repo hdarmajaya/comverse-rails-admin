@@ -24,6 +24,8 @@
 #
 
 class TaxPkgInstIdRef < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :basic_days, :bin_rounding, :exclude_charge, :is_binned, 
     :is_default, :is_distributed, :is_franchise, :is_graduated, :is_gui_pretax, 
     :is_inclusive, :is_internal, :is_late_fee_exempt, :pkg_order, :rounding_factor, 
@@ -55,6 +57,66 @@ class TaxPkgInstIdRef < ActiveRecord::Base
 
   has_one :tax_pkg_inst_id_value, foreign_key: :tax_pkg_inst_id, dependent: :destroy
   has_one :tax_rates_vat, foreign_key: :tax_pkg_inst_id, dependent: :destroy
+
+  def is_binned_enum
+    yes_or_no
+  end
+
+  def is_distributed_enum
+    yes_or_no
+  end
+
+  def is_franchise_enum
+    yes_or_no
+  end
+
+  def is_default_enum
+    yes_or_no
+  end
+
+  def is_graduated_enum
+    yes_or_no
+  end
+
+  def is_gui_pretax_enum
+    yes_or_no
+  end
+
+  def is_inclusive_enum
+    yes_or_no
+  end
+
+  def is_internal_enum
+    yes_or_no
+  end
+
+  def is_late_fee_exempt_enum
+    yes_or_no
+  end
+
+  def exclude_charge_enum
+    yes_or_no
+  end
+
+  def bin_rounding_enum
+    yes_or_no
+  end
+
+  def pkg_order_enum
+    yes_or_no
+  end
+
+  def tax_zero_charge_enum
+    yes_or_no
+  end
+
+  def basic_days_enum
+    yes_or_no
+  end
+
+  def rounding_factor_enum
+    yes_or_no
+  end
 
   rails_admin do
     object_label_method :tax_pkg_inst_id
