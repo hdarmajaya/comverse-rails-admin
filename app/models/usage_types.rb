@@ -55,6 +55,8 @@
 #
 
 class UsageTypes < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :bill_aggr_level, :consolidate_usage, :consolidate_usage, 
     :derive_distance_units, :derive_jurisdiction, :description_code, 
     :distance_units_indicator, :duration_flag, :element_id, :free_usg, 
@@ -128,11 +130,11 @@ class UsageTypes < ActiveRecord::Base
   has_one :usage_type_group, foreign_key: :type_id_usg, dependent: :destroy
 
   def is_late_fee_exempt_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 
   def is_prerated_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 
   rails_admin do

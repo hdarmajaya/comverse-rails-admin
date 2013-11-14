@@ -9,6 +9,8 @@
 #
 
 class RateClassDescr < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :description_code, :is_default, :level_code, :rate_class
 
   self.table_name = :rate_class_descr
@@ -20,6 +22,6 @@ class RateClassDescr < ActiveRecord::Base
   validates :description_code, presence: true, length: { maximum: 10 }
 
   def is_default_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 end

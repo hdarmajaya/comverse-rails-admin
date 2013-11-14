@@ -9,6 +9,8 @@
 #
 
 class MobileZoneRef < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :is_default, :is_internal, :mobile_zone, :zone_parent
 
   self.table_name = :mobile_zone_ref
@@ -23,11 +25,11 @@ class MobileZoneRef < ActiveRecord::Base
            dependent: :destroy
 
   def is_default_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 
   def is_internal_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 
   rails_admin do

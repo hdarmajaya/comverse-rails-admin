@@ -8,6 +8,8 @@
 #
 
 class PointClassRef < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :is_default, :is_internal, :point_class
 
   self.table_name = :point_class_ref
@@ -21,11 +23,11 @@ class PointClassRef < ActiveRecord::Base
   has_many :point_class_values, foreign_key: :point_class, dependent: :delete_all
 
   def is_default_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 
   def is_internal_enum
-    [ ['No', 0], ['Yes', 1] ]
+    yes_or_no
   end
 
   rails_admin do
