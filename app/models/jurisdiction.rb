@@ -8,8 +8,7 @@ class Jurisdiction < ActiveRecord::Base
   validates :description_code, presence: true, length: { maximum: 10 }
   validates :jurisdiction_class, length: { maximum: 6 }
 
-  has_many :usage_jurisdictions, class_name: 'UsageJurisdiction', 
-           foreign_key: :jurisdiction, dependent: :destroy
+  has_many :usage_jurisdictions, foreign_key: :jurisdiction, dependent: :destroy
 
   rails_admin do
     object_label_method :jurisdiction

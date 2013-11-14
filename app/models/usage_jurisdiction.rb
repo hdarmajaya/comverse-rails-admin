@@ -38,6 +38,5 @@ class UsageJurisdiction < ActiveRecord::Base
   validates :bill_class, presence: true, length: { maximum: 6 }    
   validates :zone_class, presence: true, length: { maximum: 3 }   
 
-  belongs_to :jurisdiction, class_name: 'Jurisdiction', 
-             primary_key: :jurisdiction, foreign_key: :jurisdiction
+  #belongs_to :jurisdiction, primary_key: :jurisdiction, foreign_key: :jurisdiction
 end
