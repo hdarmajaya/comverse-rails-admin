@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: descriptions
+#
+#  description_code       :integer          primary key
+#  language_code          :integer
+#  description_group      :integer
+#  description_text       :string(255)
+#  short_description_text :string(255)
+#
+
 class Description < ActiveRecord::Base
   attr_accessible :description_code, :description_group, :description_text, 
                   :language_code, :short_description_text

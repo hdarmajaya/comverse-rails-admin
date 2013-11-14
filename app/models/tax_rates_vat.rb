@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: tax_rates_vat
+#
+#  tax_pkg_inst_id   :integer          primary key
+#  currency_code     :integer
+#  fixed_amt         :integer
+#  tax_class         :integer
+#  rate              :integer
+#  active_date       :date
+#  inactive_date     :date
+#  tax_type_code     :integer
+#  billing_frequency :integer
+#  range_terminus    :integer
+#
+
 class TaxRatesVat < ActiveRecord::Base
   attr_accessible :active_date, :billing_frequency, :currency_code, :fixed_amt, 
     :inactive_date, :range_terminus, :rate, :tax_class, :tax_pkg_inst_id, 

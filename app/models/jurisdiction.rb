@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: jurisdictions
+#
+#  jurisdiction       :integer          primary key
+#  description_code   :integer
+#  jurisdiction_class :integer
+#
+
 class Jurisdiction < ActiveRecord::Base
   attr_accessible :description_code, :jurisdiction, :jurisdiction_class
 

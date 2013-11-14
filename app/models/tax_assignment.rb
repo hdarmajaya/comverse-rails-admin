@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: tax_assignments
+#
+#  account_category :integer
+#  brand_id         :integer
+#  country_code     :integer
+#  state_code       :integer
+#  county_code      :integer
+#  city_code        :integer
+#  franchise_code   :integer
+#  charge_elt_type  :integer
+#  charge_elt_id    :integer          primary key
+#  provider_id      :integer
+#  tax_pkg_inst_id  :integer
+#
+
 class TaxAssignment < ActiveRecord::Base
   attr_accessible :account_category, :brand_id, :charge_elt_id, :charge_elt_type, 
     :city_code, :country_code, :county_code, :franchise_code, :provider_id, 

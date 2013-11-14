@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: rate_class_descr
+#
+#  rate_class       :integer          primary key
+#  is_default       :integer
+#  description_code :integer
+#  level_code       :integer
+#
+
 class RateClassDescr < ActiveRecord::Base
   attr_accessible :description_code, :is_default, :level_code, :rate_class
 

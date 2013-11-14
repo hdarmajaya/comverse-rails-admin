@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: usage_type_groups
+#
+#  type_group_usg   :integer
+#  type_id_usg      :integer          primary key
+#  description_code :integer
+#
+
 class UsageTypeGroup < ActiveRecord::Base
   attr_accessible :description_code, :type_group_usg, :type_id_usg
 

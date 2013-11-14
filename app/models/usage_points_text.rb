@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: usage_points_text
+#
+#  point_id      :integer          primary key
+#  language_code :integer
+#  display_value :string(255)
+#
+
 class UsagePointsText < ActiveRecord::Base
   attr_accessible :display_value, :language_code, :point_id
 

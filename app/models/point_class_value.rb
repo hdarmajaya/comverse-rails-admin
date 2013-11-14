@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: point_class_values
+#
+#  point_class   :integer          primary key
+#  language_code :integer
+#  short_display :string(255)
+#  display_value :string(255)
+#
+
 class PointClassValue < ActiveRecord::Base
   attr_accessible :display_value, :language_code, :point_class, :short_display
 

@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: mobile_zone_ref
+#
+#  mobile_zone :integer          primary key
+#  zone_parent :integer
+#  is_default  :integer
+#  is_internal :integer
+#
+
 class MobileZoneRef < ActiveRecord::Base
   attr_accessible :is_default, :is_internal, :mobile_zone, :zone_parent
 

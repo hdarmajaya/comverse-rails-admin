@@ -21,6 +21,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  # Add a comment summarizing the current schema
+  gem 'annotate', ">=2.5.0"
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

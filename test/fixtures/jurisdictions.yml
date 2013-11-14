@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: jurisdictions
+#
+#  jurisdiction       :integer          primary key
+#  description_code   :integer
+#  jurisdiction_class :integer
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:

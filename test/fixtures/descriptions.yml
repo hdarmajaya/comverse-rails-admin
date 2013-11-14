@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: descriptions
+#
+#  description_code       :integer          primary key
+#  language_code          :integer
+#  description_group      :integer
+#  description_text       :string(255)
+#  short_description_text :string(255)
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:

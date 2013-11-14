@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: point_class_values
+#
+#  point_class   :integer          primary key
+#  language_code :integer
+#  short_display :string(255)
+#  display_value :string(255)
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:

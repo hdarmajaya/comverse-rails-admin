@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: point_class_ref
+#
+#  point_class :integer          primary key
+#  is_default  :integer
+#  is_internal :integer
+#
+
 class PointClassRef < ActiveRecord::Base
   attr_accessible :is_default, :is_internal, :point_class
 
