@@ -31,6 +31,8 @@
 #
 
 class UsagePoint < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :access_region, :active_dt, :arch_flag, :country_code, 
     :inactive_dt, :is_a_prefix, :is_international, :mobile_zone, :point, 
     :point_category, :point_city, :point_class, :point_coordinate_type, 
@@ -68,4 +70,12 @@ class UsagePoint < ActiveRecord::Base
   validates :mobile_zone, length: { maximum: 10 }
 
   belongs_to :mobile_zone_ref, foreign_key: :mobile_zone
+
+  def is_a_prefix_enum
+    yes_or_no
+  end
+
+  def is_international_enum
+    yes_or_no
+  end
 end
