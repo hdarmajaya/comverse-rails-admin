@@ -137,6 +137,22 @@ class UsageTypes < ActiveRecord::Base
     yes_or_no
   end
 
+  def origin_country_dial_code_req_enum
+    yes_or_no
+  end
+
+  def tax_code_origin_req_enum
+    yes_or_no
+  end
+
+  def tax_code_target_req_enum
+    yes_or_no
+  end
+
+  def keep_running_total_enum
+    yes_or_no
+  end
+
   rails_admin do
     object_label_method :type_id_usg
   end
