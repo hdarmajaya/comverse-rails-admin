@@ -15,6 +15,8 @@
 #
 
 class TaxRatesVat < ActiveRecord::Base
+  include SharedMethods
+
   attr_accessible :active_date, :billing_frequency, :currency_code, :fixed_amt, 
     :inactive_date, :range_terminus, :rate, :tax_class, :tax_pkg_inst_id, 
     :tax_type_code
@@ -34,4 +36,8 @@ class TaxRatesVat < ActiveRecord::Base
 
   belongs_to :tax_pkg_inst_id_ref, primary_key: :tax_pkg_inst_id,
              foreign_key: :tax_pkg_inst_id
+
+  def fixed_amt_enum
+    yes_or_no
+  end
 end
