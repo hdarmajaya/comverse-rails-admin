@@ -18,6 +18,7 @@ class Jurisdiction < ActiveRecord::Base
   validates :jurisdiction_class, length: { maximum: 6 }
 
   has_many :usage_jurisdictions, foreign_key: :jurisdiction, dependent: :destroy
+  belongs_to :jurisdiction_class_ref, foreign_key: :jurisdiction_class
 
   rails_admin do
     object_label_method :jurisdiction
