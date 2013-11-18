@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: jurisdiction_class_ref
+#
+#  jurisdiction_class :integer          primary key
+#  is_default         :integer
+#  is_internal        :integer
+#
+
 class JurisdictionClassRef < ActiveRecord::Base
   include SharedMethods
 
