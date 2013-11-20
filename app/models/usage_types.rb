@@ -61,7 +61,7 @@ class UsageTypes < ActiveRecord::Base
     :derive_distance_units, :derive_jurisdiction, :description_code, 
     :distance_units_indicator, :duration_flag, :element_id, :free_usg, 
     :guide_to, :guide_to_provider, :is_late_fee_exempt, :is_prerated, 
-    :keep_running_total, :min_billing_units, :origin_country_dial_code_req, 
+    :keep_running_total, :min_billing_units, :network_delay, :origin_country_dial_code_req, 
     :point_category, :product_line_id, :ratable_unit_class, :rate_currency_code, 
     :rate_currency_location, :rate_minimum_duration, :rate_period_rounding, 
     :rating_method, :raw_units_type, :rounding_method, :tax_class, 
@@ -125,6 +125,7 @@ class UsageTypes < ActiveRecord::Base
   validates :consolidate_usage, presence:true, length: { maximum: 10 }
   validates :is_late_fee_exempt, presence:true, length: { maximum: 1 }
   validates :rating_method, presence:true, length: { maximum: 10 }
+  validates :network_delay, presence:true, length: { maximum: 10 }
   validates :use_zone_class, length: { maximum: 3 }
 
   has_one :usage_type_group, foreign_key: :type_id_usg, dependent: :destroy

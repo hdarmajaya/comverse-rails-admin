@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131118190752) do
+ActiveRecord::Schema.define(:version => 20131120033230) do
 
   create_table "descriptions", :id => false, :force => true do |t|
     t.integer "description_code"
@@ -252,6 +252,7 @@ ActiveRecord::Schema.define(:version => 20131118190752) do
     t.integer "is_late_fee_exempt"
     t.integer "rating_method"
     t.integer "use_zone_class"
+    t.integer "network_delay"
   end
 
   create_table "users", :force => true do |t|
